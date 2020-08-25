@@ -69,7 +69,8 @@ app.delete('/post/:id', async(req, res)=>{
     });
 });
 
+const port = process.env.PORT + 1000
 
-app.listen(5050, '127.0.0.1', ()=>{
-    console.log('server is running on https://127.0.0.1:5050');
+app.listen(port, ()=>{
+    console.log(`server is running on:${port}`);
 })
