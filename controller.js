@@ -69,7 +69,7 @@ app.delete('/post/:id', async(req, res)=>{
     });
 });
 
-const port = process.env.PORT + 1000
+const port = process.env.PORT
 
 app.listen(port, ()=>{
     console.log(`server is running on:${port}`);
